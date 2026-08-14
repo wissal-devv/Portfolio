@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scrollbar-color: var(--color-background) var(--color-hover);
+}
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--primary-color);
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color-darker);
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+a:hover {
+  color: var(--color-hover);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+h2 {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  padding: 1rem;
+}
+img {
+  width: 100%;
+  max-width: 200px;
+  object-fit: cover;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+img:hover {
+  max-width: 300px;
+  box-shadow: 10px;
+  cursor: url(img/star.png);
+}
+
+.wrapper,
+.contain {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5rem;
+  background-color: var(--color-background);
+}
+.intro,
+.presentation {
+  flex: 1;
+}
+.new,
+.wrapper,
+.work,
+.resume {
+  padding: 1.5rem;
+  max-height: 900px;
+  border-color: var(--color-hover);
+  font-size: 20px;
+  color: var(--primary-color-darker);
+  background-color: var(--color-background);
+  border-radius: 20px;
+  padding: 50px;
+  margin: 50px;
+}
+#star {
+  max-width: 100px;
+}
+#star:hover {
+  max-width: 100px;
+}
+.profile {
+  padding: 0.5rem;
+  background-color: var(--primary-color-darker);
+  border-radius: 10px;
+}
+footer {
+  background-color: var(--primary-color-darker);
+  padding: 50px;
+}
+legend {
+  font-size: 30px;
+  color: var(--secondary-color);
+  padding: 10px;
+  font-weight: bold;
+}
+
+span {
+  font-style: italic;
+}
+.contact {
+  padding: 40px;
+}
+button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: var(--color-background);
+  font-size: 15px;
+  color: var(--primary-color-darker);
+  border-radius: 20px;
+  border: rgb(79, 79, 61);
+  transition: 0.5s;
+}
+button:hover {
+  background-color: var(--color-hover);
+  cursor: pointer;
+}
+.image {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input {
+  width: 300px;
+  outline: none;
+  font-size: 2.2em;
+  padding: 0 30px;
+  line-height: 40px;
+  border-radius: 10px;
+}
+.num {
+  padding: 10px;
+}
+form {
+  color: rgb(52, 22, 5);
+  font-size: 18px;
+}

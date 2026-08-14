@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -12,60 +21,129 @@
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#resume">Resume</a>
-        <a href="contact">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
       <h1>My Portfolio</h1>
 
-      <h2>Home</h2>
-      My Portfolio
+      <section class="new">
 
-      <!-- self presentation -->
-      <h2 id="about">about</h2>
-      <img src="girl.jfif" alt="ID picture" />
+        
+        <div class="wrap">
+          <div class="star">
+        <img src="star.png" id="star" alt="star">
+        <h2>Home</h2>
+        </div>
+        <div class="presentation">
+        <p>Welcome to My Portfolio! A web page that I built using HTML and CSS. Feel free to navigate through the page 🌷</p>
+        </div>
+        </div>
+</section>
 
-      <p>
-        Hello I am Wissal, 17 years old. I joined Go my code's summer camp to
-        learn web developement using HTML and CSS aswell as JavaScript. Some of
-        my hobbies are crochet, baking, web developement and watching anime.
-      </p>
 
-      <!-- Some of my works -->
-      <h2 id="work">Work</h2>
-      <p>
-        Here are a few items I made with crochet that you can also find on my
-        <a href="https://www.instagram.com/stichyart/" target="_blank"
-          >instagram</a
-        >
-        page
-      </p>
-      <img
-        src="https://www.instagram.com/p/DMnwGsytu6f/?img_index=1"
-        alt="crochet bag"
-      />
-      <img
-        src="https://www.instagram.com/p/C80Qr72gwVf/?img_index=1"
-        alt="crochet spider-man plushie"
-      />
+        <!-- self presentation -->
+        <section>
+         <div class="wrapper">
+
+        <div class="profile">
+        <img src="girl.jfif" alt="ID picture" />
+        </div>
+
+        <div class="intro">
+          <h2 id="about">About Me 🍥</h2>
+          
+          <p>
+            Hello I am Wissal, 17 years old. I joined Go my code's summer camp to
+            learn web developement using HTML and CSS aswell as JavaScript. Some
+            of my hobbies are crochet, baking, web developement and watching
+            anime.
+          </p>
+        </div>
+
+        </div>
+      </section>
+
+      <section class="work">
+        <!-- Some of my works -->
+        <h2 >Work</h2>
+        <p>
+          Here are a few items I made with crochet that you can also find on my
+          <a href="https://www.instagram.com/stichyart/" target="_blank"
+            ><span>Instagram page</span></a>
+        </p>
+
+        <!-- pics of my work -->
+         <div class="image">
+          <div class="gloves">
+        <img src="cat-gloves.jfif" alt="crochet cat gloves" />
+        </div>
+
+        <div class="bag">
+        <img src="bag.jfif" alt="crochet bag" />
+        </div>
+        <div class="spiderman">
+        <img src="plushie.jfif" alt="crochet spiderman plushie">
+        </div>
+
+        <div class="headband">
+          <img src="headband.jfif" alt="crochet headband">
+        </div>
+      </div>
+
+      </section>
 
       <!-- my resume -->
-      <h2>resume</h2>
-      <p id="resume">
-        Highschool level <br />
-
-        speaks english french arabic and A1 german
-      </p>
+      <section class="resume">
+        <h2>  Resume 👩‍🎓</h2>
+        <p id="resume">
+         <ul>
+          <li>Baccalaureat degree</li>
+          <li>Speaks English, Arbic, French and A1 German</li>
+          <li>HTML CSS (in progress)</li>
+          <li>I have a cat ^^</li>
+         </ul>
+        </p>
+      </section>
     </main>
 
-    <footer>
-      <h2 id="contact">Contact</h2>
-      <p>
-        you can contact me via : <br />
-        <a href="emailto.wissal.bmz65@gmail.com">Email</a><br />
-        <a href="tel.0796753546">Phone</a>
-      </p>
+    <footer id="contact">
+      <form
+        action="mailto:wissal.bmz65@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        
+        
+          <legend>Contact Information</legend>
+          <p>You can leave a lil message in here if you want 🌷</p><br>
+
+          <form class="contact">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" /><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message"></textarea>
+
+          <button type="submit">Send</button>
+          </form>
+
+          <form 
+          action="tel:0796753506"
+          method="get"
+          ><br>
+          <span>Other ways to contact me:</span><br>
+
+          <div class="num">
+          <label for="number">Phone number:</label><br>
+          <input type="text" id="number" name="number" />
+
+          <button type="submit" >Call me</button>
+          </div>
+          </form>
+        
+      
     </footer>
   </body>
 </html>
